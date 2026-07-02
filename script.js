@@ -1,114 +1,87 @@
-/* =========================================================
+/* ============================================================
    Rijschool Amsterdam — script.js
-   ========================================================= */
+   ============================================================ */
 
-/* ---- CONFIGURATIE: pas hier je WhatsApp-nummer aan ----
-   Internationaal formaat ZONDER + of spaties (bijv. 31612345678) */
+/* CONFIG: WhatsApp-nummer, internationaal formaat zonder + of spaties */
 const WHATSAPP_NUMBER = "31600000000";
-/* ------------------------------------------------------- */
 
 document.addEventListener("DOMContentLoaded", () => {
 
-  /* ===== Sticky header schaduw bij scroll ===== */
-  const header = document.getElementById("header");
-  const onScroll = () => header.classList.toggle("scrolled", window.scrollY > 40);
+  /* ---- Nav: achtergrond bij scroll ---- */
+  const nav = document.getElementById("nav");
+  const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 30);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
 
-  /* ===== Mobiel menu ===== */
-  const nav = document.getElementById("nav");
+  /* ---- Mobiel menu ---- */
   const toggle = document.getElementById("navToggle");
-  const closeMenu = () => {
-    nav.classList.remove("open");
-    document.body.classList.remove("menu-open");
-    toggle.setAttribute("aria-expanded", "false");
-  };
-  toggle.addEventListener("click", () => {
-    const open = nav.classList.toggle("open");
-    document.body.classList.toggle("menu-open", open);
+  const menu = document.getElementById("mobileMenu");
+  const setMenu = (open) => {
+    toggle.classList.toggle("open", open);
+    menu.classList.toggle("open", open);
     toggle.setAttribute("aria-expanded", String(open));
-  });
-  nav.querySelectorAll("a").forEach(a => a.addEventListener("click", closeMenu));
-
-  /* ===== Scroll reveal animaties ===== */
-  const revealEls = document.querySelectorAll(".reveal");
-  if ("IntersectionObserver" in window) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry, i) => {
-        if (entry.isIntersecting) {
-          entry.target.style.transitionDelay = (i % 4) * 80 + "ms";
-          entry.target.classList.add("in");
-          io.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
-    revealEls.forEach(el => io.observe(el));
-  } else {
-    revealEls.forEach(el => el.classList.add("in"));
-  }
-
-  /* ===== Tellers (cijfers) animeren ===== */
-  const counters = document.querySelectorAll(".stat-num[data-count]");
-  const animateCount = (el) => {
-    const target = parseFloat(el.dataset.count);
-    const decimals = parseInt(el.dataset.decimals || "0", 10);
-    const suffix = el.dataset.suffix || "";
-    const dur = 1500;
-    const start = performance.now();
-    const step = (now) => {
-      const p = Math.min((now - start) / dur, 1);
-      const eased = 1 - Math.pow(1 - p, 3);
-      const val = (eased * target);
-      el.textContent = val.toLocaleString("nl-NL", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) + suffix;
-      if (p < 1) requestAnimationFrame(step);
-      else el.textContent = target.toLocaleString("nl-NL", { minimumFractionDigits: decimals, maximumFractionDigits: decimals }) + suffix;
-    };
-    requestAnimationFrame(step);
+    menu.setAttribute("aria-hidden", String(!open));
   };
-  if ("IntersectionObserver" in window) {
-    const co = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) { animateCount(entry.target); co.unobserve(entry.target); }
-      });
-    }, { threshold: 0.6 });
-    counters.forEach(el => co.observe(el));
-  } else {
-    counters.forEach(el => { el.textContent = el.dataset.count + (el.dataset.suffix || ""); });
-  }
+  toggle.addEventListener("click", () => setMenu(!menu.classList.contains("open")));
+  menu.querySelectorAll("a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
 
-  /* ===== FAQ: maximaal één tegelijk open ===== */
+  /* ---- Scroll reveal ---- */
+  const reveals = document.querySelectorAll(".reveal");
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((entry, i) => {
+      if (!entry.isIntersecting) return;
+      entry.target.style.transitionDelay = `${(i % 4) * 80}ms`;
+      entry.target.classList.add("in");
+      io.unobserve(entry.target);
+    });
+  }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+  reveals.forEach((el) => io.observe(el));
+
+  /* ---- Tellers in hero-stats ---- */
+  const animateCount = (el) => {
+    const target = parseInt(el.dataset.count, 10);
+    const dur = 1400;
+    const start = performance.now();
+    const tick = (now) => {
+      const p = Math.min((now - start) / dur, 1);
+      el.textContent = Math.floor((1 - Math.pow(1 - p, 3)) * target).toLocaleString("nl-NL");
+      if (p < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      animateCount(entry.target);
+      counterIO.unobserve(entry.target);
+    });
+  }, { threshold: 0.6 });
+  document.querySelectorAll(".num[data-count]").forEach((el) => counterIO.observe(el));
+
+  /* ---- FAQ: één tegelijk open ---- */
   const faqItems = document.querySelectorAll(".faq-item");
-  faqItems.forEach(item => {
+  faqItems.forEach((item) => {
     item.addEventListener("toggle", () => {
-      if (item.open) faqItems.forEach(o => { if (o !== item) o.open = false; });
+      if (item.open) faqItems.forEach((other) => { if (other !== item) other.open = false; });
     });
   });
 
-  /* ===== Contactformulier -> WhatsApp ===== */
-  const form = document.getElementById("contactForm");
-  if (form) {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const naam = (document.getElementById("f-naam").value || "").trim();
-      const tel = (document.getElementById("f-telefoon").value || "").trim();
-      const plaats = (document.getElementById("f-plaats").value || "").trim();
-      const type = (document.getElementById("f-type").value || "").trim();
-      const bericht = (document.getElementById("f-bericht").value || "").trim();
+  /* ---- Formulier -> WhatsApp ---- */
+  document.getElementById("contactForm").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const val = (id) => document.getElementById(id).value.trim();
+    const fields = [
+      ["Naam", val("f-naam")],
+      ["Telefoon", val("f-telefoon")],
+      ["Plaats", val("f-plaats")],
+      ["Voorkeur", val("f-type")],
+      ["Bericht", val("f-bericht")],
+    ];
+    const lines = fields.filter(([, v]) => v).map(([k, v]) => `• ${k}: ${v}`);
+    const msg = `Hoi! Ik wil graag een GRATIS PROEFLES aanvragen.\n\n${lines.join("\n")}\n\nKunnen jullie contact met mij opnemen?`;
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
+  });
 
-      let msg = "Hoi! Ik wil graag een GRATIS PROEFLES aanvragen.\n\n";
-      if (naam)    msg += `• Naam: ${naam}\n`;
-      if (tel)     msg += `• Telefoon: ${tel}\n`;
-      if (plaats)  msg += `• Plaats: ${plaats}\n`;
-      if (type)    msg += `• Voorkeur: ${type}\n`;
-      if (bericht) msg += `• Bericht: ${bericht}\n`;
-      msg += "\nKunnen jullie contact met mij opnemen? Bedankt!";
-
-      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`;
-      window.open(url, "_blank", "noopener");
-    });
-  }
-
-  /* ===== Jaartal in footer ===== */
-  const yearEl = document.getElementById("year");
-  if (yearEl) yearEl.textContent = new Date().getFullYear();
+  /* ---- Jaartal ---- */
+  document.getElementById("year").textContent = new Date().getFullYear();
 });

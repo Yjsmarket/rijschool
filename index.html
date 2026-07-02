@@ -3,37 +3,27 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ============ SEO ============ -->
   <title>Rijschool Amsterdam | In één keer je rijbewijs · Gratis proefles</title>
-  <meta name="description" content="Rijschool in Amsterdam en omstreken. Ervaren, geduldige instructeurs, hoog slagingspercentage en flexibele lestijden. Schakel of automaat. Vraag nu je gratis proefles aan via WhatsApp of bel ons." />
-  <meta name="keywords" content="rijschool Amsterdam, rijbewijs halen Amsterdam, rijlessen, proefles, spoedcursus rijbewijs, automaat rijles, rijschool omstreken Amsterdam" />
+  <meta name="description" content="Rijschool in Amsterdam en omstreken. Ervaren, geduldige instructeurs, 92% slaagt in één keer. Schakel of automaat, flexibele tijden en gratis ophaalservice. Vraag je gratis proefles aan." />
   <meta name="author" content="Rijschool" />
   <link rel="canonical" href="https://yjsmarket.github.io/rijschool/" />
 
-  <!-- ============ Open Graph / Social ============ -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="nl_NL" />
   <meta property="og:site_name" content="Rijschool Amsterdam" />
   <meta property="og:title" content="Rijschool Amsterdam · In één keer je rijbewijs" />
-  <meta property="og:description" content="Ervaren instructeurs, hoog slagingspercentage en flexibele tijden in Amsterdam en omstreken. Vraag je gratis proefles aan!" />
+  <meta property="og:description" content="Ervaren instructeurs, 92% slaagt in één keer. Flexibele tijden in Amsterdam en omstreken. Vraag je gratis proefles aan." />
   <meta property="og:url" content="https://yjsmarket.github.io/rijschool/" />
   <meta property="og:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Rijschool Amsterdam · In één keer je rijbewijs" />
-  <meta name="twitter:description" content="Ervaren instructeurs, hoog slagingspercentage en flexibele tijden in Amsterdam en omstreken." />
-  <meta name="twitter:image" content="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1200&q=80" />
 
-  <meta name="theme-color" content="#2563eb" />
+  <meta name="theme-color" content="#0d0f12" />
 
-  <!-- ============ Fonts ============ -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 
-  <!-- ============ Structured Data: DrivingSchool ============ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -53,301 +43,314 @@
       "addressCountry": "NL"
     },
     "areaServed": ["Amsterdam", "Amstelveen", "Diemen", "Zaandam", "Haarlem", "Hoofddorp"],
-    "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "20:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "16:00" }
-    ],
     "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "187" }
   }
   </script>
 </head>
-
 <body>
+  <div class="bg-glow" aria-hidden="true"></div>
 
-  <!-- ============ HEADER ============ -->
-  <header class="site-header" id="header">
-    <div class="container header-inner">
-      <a href="#hero" class="logo">
-        <span class="logo-mark">🚗</span>
-        <span class="logo-text">Rijschool<small>AMSTERDAM E.O.</small></span>
-      </a>
-
-      <nav class="nav" id="nav">
-        <a href="#over">Over ons</a>
-        <a href="#pakketten">Lespakketten</a>
-        <a href="#bieden">Wat wij bieden</a>
-        <a href="#geslaagden">Geslaagden</a>
-        <a href="#reviews">Reviews</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact" class="nav-cta">Gratis proefles</a>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3M12 12l3.5-3.5"/></svg>
+      </span>
+      <span class="brand-text">RIJSCHOOL<small>AMSTERDAM E.O.</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Hoofdmenu">
+      <a href="#pakketten">Pakketten</a>
+      <a href="#aanpak">Aanpak</a>
+      <a href="#geslaagden">Geslaagden</a>
+      <a href="#werkgebied">Werkgebied</a>
+      <a href="#faq">FAQ</a>
+      <a href="#proefles" class="nav-cta">Gratis proefles</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">
+      <span></span><span></span>
+    </button>
   </header>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <p class="hero-eyebrow reveal">⭐ 4,9/5 · 187 reviews · Rijschool in Amsterdam e.o.</p>
-      <h1 class="hero-title reveal">In één keer je<br><em>rijbewijs</em> in Amsterdam</h1>
-      <p class="hero-sub reveal">Ervaren, geduldige instructeurs. Lessen op jouw tempo, flexibele tijden en een hoog slagingspercentage. Begin vandaag nog met een gratis proefles!</p>
-      <div class="hero-actions reveal">
-        <a href="#contact" class="btn btn-primary">Gratis proefles</a>
-        <a href="https://wa.me/31600000000" class="btn btn-whatsapp" target="_blank" rel="noopener">
-          <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.137.561 4.146 1.541 5.888L4 29l8.32-1.514A11.93 11.93 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.6c-1.86 0-3.6-.5-5.097-1.37l-.366-.214-4.94.898.91-4.81-.238-.382A9.55 9.55 0 0 1 6.4 15c0-5.292 4.31-9.6 9.601-9.6 5.29 0 9.599 4.308 9.599 9.6 0 5.291-4.309 9.6-9.599 9.6zm5.27-7.19c-.29-.145-1.71-.844-1.976-.94-.265-.097-.458-.145-.65.145-.193.29-.746.94-.915 1.133-.168.193-.337.218-.626.073-.29-.145-1.223-.451-2.33-1.438-.861-.768-1.443-1.717-1.612-2.007-.169-.29-.018-.446.127-.59.13-.13.29-.338.435-.507.145-.169.193-.29.29-.483.097-.193.048-.362-.024-.507-.073-.145-.65-1.566-.89-2.146-.235-.563-.473-.487-.65-.496l-.554-.01c-.193 0-.507.072-.772.362s-1.013.99-1.013 2.41c0 1.422 1.037 2.795 1.182 2.988.145.193 2.04 3.115 4.943 4.368.69.298 1.23.476 1.65.61.693.22 1.323.189 1.822.115.556-.083 1.71-.699 1.951-1.374.241-.676.241-1.255.169-1.374-.072-.12-.265-.193-.555-.338z"/></svg>
-          WhatsApp ons
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ZWEVENDE USP-KAART (overlapt hero) ============ -->
-  <div class="usp-float-wrap">
-    <div class="container">
-      <div class="usp-float reveal">
-        <div class="usp-item"><strong>92%</strong><span>slaagt in één keer</span></div>
-        <div class="usp-item"><strong>2.500+</strong><span>geslaagden</span></div>
-        <div class="usp-item"><strong>Automaat &amp; schakel</strong><span>jij kiest</span></div>
-        <div class="usp-item"><strong>Gratis ophaalservice</strong><span>door heel Amsterdam</span></div>
-      </div>
-    </div>
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="#pakketten">Pakketten</a>
+    <a href="#aanpak">Aanpak</a>
+    <a href="#geslaagden">Geslaagden</a>
+    <a href="#werkgebied">Werkgebied</a>
+    <a href="#faq">FAQ</a>
+    <a href="#proefles">Gratis proefles</a>
   </div>
 
-  <!-- ============ OVER ONS ============ -->
-  <section class="section over" id="over">
-    <div class="container over-grid">
-      <div class="over-images reveal">
-        <img class="over-img-main"
-             src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=900&q=80"
-             alt="Rij-instructeur geeft uitleg in de lesauto" loading="lazy" />
-        <div class="over-badge">
-          <span class="over-badge-num">4,9</span>
-          <span class="over-badge-stars">★★★★★</span>
-          <span class="over-badge-label">gemiddeld cijfer</span>
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <!-- >>> HERO FOTO — vervang deze URL <<< -->
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=2000&q=80" alt="" />
+        <div class="hero-shade"></div>
+      </div>
+      <div class="hero-inner">
+        <div class="hero-tag reveal">
+          <span class="pulse" aria-hidden="true"></span>
+          4,9/5 uit 187 reviews · Amsterdam &amp; omstreken
+        </div>
+        <h1 class="hero-title">
+          <span class="line reveal">In één keer je <span class="accent">rijbewijs</span>.</span>
+          <span class="line reveal">Zonder stress.</span>
+        </h1>
+        <p class="hero-sub reveal">
+          Ervaren, geduldige instructeurs. Lessen op jouw tempo, in schakel of automaat,
+          met flexibele tijden en gratis ophaalservice door de hele regio. Begin met een
+          gratis proefles en merk zelf het verschil.
+        </p>
+        <div class="hero-actions reveal">
+          <a href="#proefles" class="btn btn-primary">Gratis proefles
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="https://wa.me/31600000000" class="btn btn-ghost" target="_blank" rel="noopener">WhatsApp ons</a>
+        </div>
+        <div class="hero-stats reveal">
+          <div class="stat"><span class="num" data-count="92">0</span><span class="suffix">%</span><small>slaagt in één keer</small></div>
+          <div class="stat"><span class="num" data-count="2500">0</span><span class="suffix">+</span><small>geslaagde leerlingen</small></div>
+          <div class="stat"><span class="num" data-count="15">0</span><span class="suffix">+</span><small>jaar ervaring</small></div>
         </div>
       </div>
-      <div class="over-text reveal">
-        <p class="eyebrow">Over ons</p>
-        <h2>Jouw rijbewijs, in vertrouwde handen</h2>
-        <p>Bij onze rijschool draait alles om jou. Onze <strong>ervaren en geduldige instructeurs</strong> nemen de tijd, leggen rustig uit en zorgen dat je met zelfvertrouwen achter het stuur zit, of je nu net begint of bijna toe bent aan je examen.</p>
-        <p>We werken met moderne, goed onderhouden lesauto's en lessen door heel Amsterdam en omstreken. Geen gedoe, geen verrassingen: heldere afspraken, eerlijke prijzen en persoonlijke begeleiding tot je geslaagd bent.</p>
-        <ul class="over-checks">
-          <li>Persoonlijk lesplan op jouw tempo</li>
-          <li>Rijden in schakel én automaat</li>
-          <li>Theorie-ondersteuning inbegrepen</li>
-          <li>Flexibel: ook 's avonds en in het weekend</li>
-        </ul>
-        <a href="#contact" class="btn btn-primary">Plan je gratis proefles</a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Schakel</span><span class="dot">/</span>
+        <span>Automaat</span><span class="dot">/</span>
+        <span>Spoedcursus</span><span class="dot">/</span>
+        <span>Theorie-ondersteuning</span><span class="dot">/</span>
+        <span>Gratis ophaalservice</span><span class="dot">/</span>
+        <span>Schakel</span><span class="dot">/</span>
+        <span>Automaat</span><span class="dot">/</span>
+        <span>Spoedcursus</span><span class="dot">/</span>
+        <span>Theorie-ondersteuning</span><span class="dot">/</span>
+        <span>Gratis ophaalservice</span><span class="dot">/</span>
       </div>
     </div>
-  </section>
 
-  <!-- ============ LESPAKKETTEN ============ -->
-  <section class="section pakketten" id="pakketten">
-    <!-- curve-divider bovenaan -->
-    <div class="curve-top" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,80 C360,0 1080,0 1440,80 L1440,0 L0,0 Z"></path></svg>
-    </div>
-    <div class="container">
+    <!-- ============ PAKKETTEN ============ -->
+    <section class="section" id="pakketten">
       <div class="section-head reveal">
-        <p class="eyebrow">Lespakketten</p>
-        <h2>Kies wat bij jou past</h2>
-        <p class="section-intro">Van losse lessen tot een complete spoedcursus: er is altijd een pakket dat aansluit op jouw planning en budget.</p>
+        <span class="eyebrow">01 · Lespakketten</span>
+        <h2>Kies de route naar je <span class="accent">roze pasje</span>.</h2>
+        <p>Van losse lessen tot een complete spoedcursus. Eerlijke prijzen op aanvraag, geen verrassingen.</p>
       </div>
 
-      <div class="price-grid">
-        <article class="price-card reveal">
-          <div class="price-icon">🚗</div>
+      <div class="cards">
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-num">01</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+            </span>
+          </div>
           <h3>Losse lessen</h3>
-          <p class="price-sub">Flexibel bijleren</p>
-          <div class="price">op aanvraag</div>
-          <ul>
-            <li>Les van 60 of 90 minuten</li>
-            <li>Geen verplichtingen</li>
-            <li>Ideaal om bij te schaven</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline">Aanvragen</a>
+          <p>Les van 60 of 90 minuten, zonder verplichtingen. Ideaal om bij te schaven of rustig te starten.</p>
         </article>
 
-        <article class="price-card popular reveal">
-          <span class="badge-popular">Populair</span>
-          <div class="price-icon">📅</div>
+        <article class="card card-feature reveal">
+          <div class="card-top">
+            <span class="card-num">02</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg>
+            </span>
+          </div>
+          <span class="card-flag">Populair</span>
           <h3>10-lessenpakket</h3>
-          <p class="price-sub">Voordelig instappen</p>
-          <div class="price">op aanvraag</div>
-          <ul>
-            <li>10 rijlessen met korting</li>
-            <li>Persoonlijk lesplan</li>
-            <li>Voortgang bijgehouden</li>
-          </ul>
-          <a href="#contact" class="btn btn-primary">Aanvragen</a>
+          <p>Voordelig instappen met een persoonlijk lesplan. Je voortgang wordt per les bijgehouden, zodat je precies weet waar je staat.</p>
         </article>
 
-        <article class="price-card reveal">
-          <div class="price-icon">⚡</div>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-num">03</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"/></svg>
+            </span>
+          </div>
           <h3>Spoedcursus</h3>
-          <p class="price-sub">Snel je rijbewijs</p>
-          <div class="price">op aanvraag</div>
-          <ul>
-            <li>Intensief in korte tijd</li>
-            <li>Inclusief praktijkexamen</li>
-            <li>Snel examen via spoed</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline">Aanvragen</a>
+          <p>Intensief traject in enkele weken, inclusief praktijkexamen. Voor wie snel en gefocust zijn rijbewijs wil halen.</p>
         </article>
 
-        <article class="price-card reveal">
-          <div class="price-icon">📋</div>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-num">04</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+            </span>
+          </div>
           <h3>Tussentijdse toets</h3>
-          <p class="price-sub">Meer kans van slagen</p>
-          <div class="price">op aanvraag</div>
-          <ul>
-            <li>Officiële tussentijdse toets</li>
-            <li>Onderdelen vrijstelling</li>
-            <li>Minder examenstress</li>
-          </ul>
-          <a href="#contact" class="btn btn-outline">Aanvragen</a>
+          <p>Officiële proefexamen-ervaring vooraf. Vrijstelling voor onderdelen en minder stress op de grote dag.</p>
         </article>
-      </div>
-      <p class="price-note reveal">💡 Prijzen op aanvraag. Je krijgt een eerlijk, persoonlijk voorstel. Vraag het direct via WhatsApp.</p>
-    </div>
-  </section>
 
-  <!-- ============ WAT WIJ BIEDEN ============ -->
-  <section class="section bieden" id="bieden">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Wat wij bieden</p>
-        <h2>Alles om jou te laten slagen</h2>
-      </div>
-      <div class="feature-grid">
-        <div class="feature reveal"><div class="feature-icon">🚙</div><h3>Moderne lesauto's</h3><p>Veilige, goed onderhouden auto's met dubbele bediening.</p></div>
-        <div class="feature reveal"><div class="feature-icon">⚙️</div><h3>Automaat &amp; schakel</h3><p>Leer rijden zoals jij wilt: handgeschakeld of automaat.</p></div>
-        <div class="feature reveal"><div class="feature-icon">📚</div><h3>Theorie-ondersteuning</h3><p>Hulp en oefenmateriaal om ook je theorie te halen.</p></div>
-        <div class="feature reveal"><div class="feature-icon">🕐</div><h3>Flexibele tijden</h3><p>Lessen overdag, 's avonds en in het weekend.</p></div>
-        <div class="feature reveal"><div class="feature-icon">📍</div><h3>Ophaalservice</h3><p>We halen je op bij thuis, school of werk in de regio.</p></div>
-        <div class="feature reveal"><div class="feature-icon">🎯</div><h3>Persoonlijke aanpak</h3><p>Een vast aanspreekpunt dat jouw voortgang kent.</p></div>
-      </div>
-    </div>
-  </section>
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="card-num">05</span>
+            <span class="card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </span>
+          </div>
+          <h3>Theorie-ondersteuning</h3>
+          <p>Oefenmateriaal en begeleiding voor je theorie-examen, inbegrepen bij elk pakket.</p>
+        </article>
 
-  <!-- ============ SLAGINGSPERCENTAGE / CIJFERS (overlappende gekleurde band) ============ -->
-  <section class="section cijfers" id="cijfers">
-    <div class="cijfers-bg"></div>
-    <div class="cijfers-overlay"></div>
-    <div class="container">
-      <div class="section-head reveal light">
-        <p class="eyebrow">Onze cijfers</p>
-        <h2>Resultaten die voor zich spreken</h2>
+        <a href="#proefles" class="card card-cta reveal">
+          <svg class="card-cta-arrow" viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M9 7h8v8"/></svg>
+          <h3>Twijfel je nog?</h3>
+          <p>Start met een gratis proefles. Je zit zelf achter het stuur en weet daarna precies waar je aan toe bent.</p>
+        </a>
       </div>
-      <div class="stats-grid">
-        <div class="stat reveal"><span class="stat-num" data-count="92" data-suffix="%">0</span><span class="stat-label">slaagt in één keer</span></div>
-        <div class="stat reveal"><span class="stat-num" data-count="2500" data-suffix="+">0</span><span class="stat-label">geslaagde leerlingen</span></div>
-        <div class="stat reveal"><span class="stat-num" data-count="4.9" data-decimals="1">0</span><span class="stat-label">gemiddelde beoordeling</span></div>
-        <div class="stat reveal"><span class="stat-num" data-count="15" data-suffix="+">0</span><span class="stat-label">jaar ervaring</span></div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ GESLAAGDEN ============ -->
-  <section class="section geslaagden" id="geslaagden">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Geslaagd! 🎉</p>
-        <h2>Onze trotse geslaagden</h2>
-        <p class="section-intro">Iedere week vieren we nieuwe rijbewijzen mee. Jij straks ook?</p>
+    <!-- ============ AANPAK ============ -->
+    <section class="section-dark slant-top slant-bottom" id="aanpak">
+      <div class="band-media" aria-hidden="true">
+        <img src="https://images.unsplash.com/photo-1502489597346-dad15683d4c2?auto=format&fit=crop&w=1600&q=80" alt="" loading="lazy" />
       </div>
-      <div class="grad-grid">
-        <figure class="grad-card reveal">
-          <img src="https://images.unsplash.com/photo-1622150162810-9e9bfacd5d83?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling met rijbewijs" loading="lazy" />
-          <figcaption><strong>Sara</strong><span>Geslaagd in 1 keer 🎉</span></figcaption>
-        </figure>
-        <figure class="grad-card reveal">
-          <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=600&q=80" alt="Blije geslaagde leerling" loading="lazy" />
-          <figcaption><strong>Mo</strong><span>Spoedcursus geslaagd 🚗</span></figcaption>
-        </figure>
-        <figure class="grad-card reveal">
-          <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling lacht" loading="lazy" />
-          <figcaption><strong>Lisa</strong><span>Geslaagd na 12 lessen ⭐</span></figcaption>
-        </figure>
-        <figure class="grad-card reveal">
-          <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=600&q=80" alt="Jonge geslaagde leerling" loading="lazy" />
-          <figcaption><strong>Daan</strong><span>Eerste poging geslaagd 🙌</span></figcaption>
-        </figure>
-        <figure class="grad-card reveal">
-          <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling met duim omhoog" loading="lazy" />
-          <figcaption><strong>Yara</strong><span>Automaat geslaagd 🎉</span></figcaption>
-        </figure>
-        <figure class="grad-card reveal">
-          <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=600&q=80" alt="Trotse geslaagde leerling" loading="lazy" />
-          <figcaption><strong>Tom</strong><span>Geslaagd in 1 keer 🚀</span></figcaption>
-        </figure>
+      <div class="section">
+        <div class="section-head reveal">
+          <span class="eyebrow">02 · Onze aanpak</span>
+          <h2>Van proefles tot <span class="accent">examen</span> in vier stappen.</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal">
+            <span class="step-num">Stap 1</span>
+            <h3>Gratis proefles</h3>
+            <p>Kennismaken met je instructeur en de auto. Vrijblijvend, jij achter het stuur.</p>
+            <span class="step-line" aria-hidden="true"></span>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">Stap 2</span>
+            <h3>Persoonlijk lesplan</h3>
+            <p>Een realistische inschatting en planning die past bij jouw tempo en agenda.</p>
+            <span class="step-line" aria-hidden="true"></span>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">Stap 3</span>
+            <h3>Lessen + toets</h3>
+            <p>Gericht oefenen met voortgang per les. Optioneel een tussentijdse toets.</p>
+            <span class="step-line" aria-hidden="true"></span>
+          </div>
+          <div class="step reveal">
+            <span class="step-num">Stap 4</span>
+            <h3>Praktijkexamen</h3>
+            <p>Examenklaar en vol zelfvertrouwen. 92% van onze leerlingen slaagt in één keer.</p>
+          </div>
+        </div>
       </div>
-      <p class="grad-note reveal">📸 <em>Placeholder-foto's. Vervang ze straks door echte foto's van jouw geslaagden.</em></p>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ REVIEWS ============ -->
-  <section class="section reviews" id="reviews">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Reviews</p>
-        <h2>Wat onze leerlingen zeggen</h2>
-      </div>
-      <div class="review-grid">
-        <blockquote class="review reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Super geduldige instructeur die echt de tijd neemt. In één keer geslaagd dankzij de goede begeleiding!"</p>
-          <footer>Sara, Amsterdam</footer>
-        </blockquote>
-        <blockquote class="review reveal">
-          <div class="stars">★★★★★</div>
-          <p>"De spoedcursus was precies wat ik nodig had. Binnen een paar weken mijn rijbewijs gehaald. Aanrader!"</p>
-          <footer>Mo, Diemen</footer>
-        </blockquote>
-        <blockquote class="review reveal">
-          <div class="stars">★★★★★</div>
-          <p>"Fijne, ontspannen sfeer in de auto. Ophaalservice was super handig naast school. Top rijschool!"</p>
-          <footer>Lisa, Amstelveen</footer>
-        </blockquote>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ WERKGEBIED ============ -->
-  <section class="section werkgebied" id="werkgebied">
-    <div class="container">
-      <div class="section-head reveal">
-        <p class="eyebrow">Werkgebied</p>
-        <h2>Wij geven les in Amsterdam &amp; omstreken</h2>
-        <p class="section-intro">Staat jouw plaats er niet bij? Vraag het gerust, we rijden door de hele regio.</p>
-      </div>
-
-      <div class="werkgebied-grid">
-        <div class="werkgebied-areas reveal">
-          <h3>Onze lesplaatsen</h3>
-          <ul class="area-list">
-            <li>Amsterdam</li>
-            <li>Amstelveen</li>
-            <li>Diemen</li>
-            <li>Zaandam</li>
-            <li>Haarlem</li>
-            <li>Hoofddorp</li>
-            <li>Purmerend</li>
-            <li>Almere</li>
-            <li>Badhoevedorp</li>
-            <li>Ouder-Amstel</li>
+    <!-- ============ WAAROM ONS ============ -->
+    <section class="section" id="waarom">
+      <div class="split">
+        <div class="split-copy reveal">
+          <span class="eyebrow">03 · Waarom ons</span>
+          <h2>Lessen die <span class="accent">werken</span>.</h2>
+          <p>Geen anonieme planning of wisselende gezichten: bij ons heb je een vaste instructeur
+             die jouw voortgang kent en je stap voor stap examenklaar maakt.</p>
+          <ul class="checklist">
+            <li>Vaste instructeur, persoonlijk lesplan</li>
+            <li>Schakel én automaat beschikbaar</li>
+            <li>Ook 's avonds en in het weekend</li>
+            <li>Gratis ophaalservice: thuis, school of werk</li>
+            <li>Moderne lesauto's met dubbele bediening</li>
           </ul>
-          <a href="#contact" class="btn btn-primary">Check jouw plaats</a>
+          <a href="#proefles" class="btn btn-primary">Plan je proefles
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="split-visual reveal">
+          <figure class="photo">
+            <!-- >>> FOTO instructeur/lesauto — vervang deze URL <<< -->
+            <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?auto=format&fit=crop&w=1000&q=80" alt="Instructeur geeft uitleg in de lesauto" loading="lazy" />
+            <figcaption class="photo-tag">Les in de praktijk</figcaption>
+          </figure>
+          <div class="badges">
+            <div class="badge"><span>4,9</span><small>gemiddelde review</small></div>
+            <div class="badge"><span>92%</span><small>slaagt in één keer</small></div>
+            <div class="badge"><span>24/7</span><small>bereikbaar via app</small></div>
+            <div class="badge"><span>15+</span><small>jaar ervaring</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GESLAAGDEN ============ -->
+    <section class="section-dark slant-top" id="geslaagden">
+      <div class="section">
+        <div class="section-head reveal">
+          <span class="eyebrow">04 · Geslaagd</span>
+          <h2>Zij gingen je <span class="accent">voor</span>.</h2>
+          <p>Iedere week nieuwe rijbewijzen. Placeholder-foto's: vervang ze door je eigen geslaagden.</p>
+        </div>
+        <div class="grads">
+          <figure class="grad reveal">
+            <img src="https://images.unsplash.com/photo-1622150162810-9e9bfacd5d83?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling" loading="lazy" />
+            <figcaption><strong>Sara</strong><span>In één keer geslaagd</span></figcaption>
+          </figure>
+          <figure class="grad reveal">
+            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling" loading="lazy" />
+            <figcaption><strong>Mo</strong><span>Spoedcursus, 4 weken</span></figcaption>
+          </figure>
+          <figure class="grad reveal">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling" loading="lazy" />
+            <figcaption><strong>Lisa</strong><span>Geslaagd na 12 lessen</span></figcaption>
+          </figure>
+          <figure class="grad reveal">
+            <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling" loading="lazy" />
+            <figcaption><strong>Daan</strong><span>Eerste poging</span></figcaption>
+          </figure>
+          <figure class="grad reveal">
+            <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling" loading="lazy" />
+            <figcaption><strong>Yara</strong><span>Automaat</span></figcaption>
+          </figure>
+          <figure class="grad reveal">
+            <img src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&fit=crop&w=600&q=80" alt="Geslaagde leerling" loading="lazy" />
+            <figcaption><strong>Tom</strong><span>In één keer geslaagd</span></figcaption>
+          </figure>
         </div>
 
-        <!-- >>> KAART — vervang de bbox/marker-coördinaten voor jouw eigen regio <<< -->
-        <div class="werkgebied-map reveal">
+        <div class="reviews">
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 sterren">★★★★★</div>
+            <p>"Super geduldige instructeur die echt de tijd neemt. In één keer geslaagd dankzij de goede begeleiding."</p>
+            <footer>Sara · Amsterdam</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 sterren">★★★★★</div>
+            <p>"De spoedcursus was precies wat ik nodig had. Binnen een paar weken mijn rijbewijs gehaald."</p>
+            <footer>Mo · Diemen</footer>
+          </blockquote>
+          <blockquote class="review reveal">
+            <div class="stars" aria-label="5 sterren">★★★★★</div>
+            <p>"Ontspannen sfeer in de auto en de ophaalservice naast school was super handig."</p>
+            <footer>Lisa · Amstelveen</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WERKGEBIED ============ -->
+    <section class="section" id="werkgebied">
+      <div class="section-head reveal">
+        <span class="eyebrow">05 · Werkgebied</span>
+        <h2>Amsterdam &amp; <span class="accent">omstreken</span>.</h2>
+        <p>Staat jouw plaats er niet bij? Vraag het gerust, we rijden door de hele regio.</p>
+      </div>
+      <div class="area">
+        <div class="area-copy reveal">
+          <ul class="chips">
+            <li>Amsterdam</li><li>Amstelveen</li><li>Diemen</li><li>Zaandam</li><li>Haarlem</li>
+            <li>Hoofddorp</li><li>Purmerend</li><li>Almere</li><li>Badhoevedorp</li><li>Ouder-Amstel</li>
+          </ul>
+          <a href="#proefles" class="btn btn-ghost">Check jouw plaats</a>
+        </div>
+        <!-- >>> KAART — pas bbox/marker aan voor jouw regio <<< -->
+        <div class="area-map reveal">
           <iframe
             title="Werkgebied rijschool Amsterdam"
             src="https://www.openstreetmap.org/export/embed.html?bbox=4.65%2C52.27%2C5.10%2C52.45&amp;layer=mapnik&amp;marker=52.3676%2C4.9041"
@@ -355,153 +358,142 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============ FAQ ============ -->
-  <section class="section faq" id="faq">
-    <div class="container faq-inner">
-      <div class="section-head reveal">
-        <p class="eyebrow">Veelgestelde vragen</p>
-        <h2>Goed om te weten</h2>
-      </div>
-      <div class="faq-list">
-        <details class="faq-item reveal">
-          <summary>Hoeveel lessen heb ik gemiddeld nodig?</summary>
-          <p>Dat verschilt per persoon. Gemiddeld zijn het zo'n 30 tot 40 lessen, maar tijdens je gratis proefles maken we een realistische inschatting op basis van jouw ervaring.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Wat kost een rijles?</summary>
-          <p>We werken met eerlijke, persoonlijke prijzen en voordelige pakketten. Vraag een vrijblijvend voorstel aan via WhatsApp of het formulier, dan weet je meteen waar je aan toe bent.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Automaat of schakel: wat kies ik?</summary>
-          <p>Beide kan! Automaat is vaak sneller te leren, schakel geeft je een breder rijbewijs. We adviseren je graag wat het beste bij jou past.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Helpen jullie ook met de theorie?</summary>
-          <p>Ja. Je krijgt theorie-ondersteuning en oefenmateriaal, zodat je ook dat onderdeel met vertrouwen haalt.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Kan ik 's avonds of in het weekend rijden?</summary>
-          <p>Zeker. We bieden flexibele lestijden, ook 's avonds en in het weekend, zodat het naast school of werk past.</p>
-        </details>
-        <details class="faq-item reveal">
-          <summary>Wat houdt de gratis proefles in?</summary>
-          <p>Een vrijblijvende les waarin je kennismaakt met je instructeur en de auto. Je zit zelf achter het stuur en weet daarna of het klikt, zonder verplichtingen.</p>
-        </details>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ CONTACT ============ -->
-  <section class="section contact" id="contact">
-    <div class="curve-top light-curve" aria-hidden="true">
-      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,80 C360,0 1080,0 1440,80 L1440,0 L0,0 Z"></path></svg>
-    </div>
-    <div class="container contact-grid">
-      <div class="contact-info reveal">
-        <p class="eyebrow">Contact</p>
-        <h2>Vraag je gratis proefles aan</h2>
-        <p class="contact-lead">Bel, app of vul het formulier in. We reageren snel en plannen je proefles op een moment dat jou uitkomt.</p>
-
-        <ul class="contact-list">
-          <li>
-            <span class="ci-icon">📞</span>
-            <div><strong>Bellen</strong><a href="tel:+31600000000">+31 6 00 00 00 00</a></div>
-          </li>
-          <li>
-            <span class="ci-icon">💬</span>
-            <div><strong>WhatsApp</strong><a href="https://wa.me/31600000000" target="_blank" rel="noopener">+31 6 00 00 00 00</a></div>
-          </li>
-          <li>
-            <span class="ci-icon">✉️</span>
-            <div><strong>E-mail</strong><a href="mailto:info@rijschool-amsterdam.nl">info@rijschool-amsterdam.nl</a></div>
-          </li>
-          <li>
-            <span class="ci-icon">📍</span>
-            <div><strong>Adres</strong><span>Voorbeeldstraat 1, 1000 AA Amsterdam</span></div>
-          </li>
-        </ul>
-
-        <div class="contact-hours">
-          <strong>Bereikbaar</strong>
-          <span>Ma–Vr 08:00–20:00 · Za 09:00–16:00</span>
+    <!-- ============ FAQ ============ -->
+    <section class="section-dark slant-top" id="faq">
+      <div class="section section-narrow">
+        <div class="section-head reveal">
+          <span class="eyebrow">06 · FAQ</span>
+          <h2>Goed om te <span class="accent">weten</span>.</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item reveal">
+            <summary>Hoeveel lessen heb ik gemiddeld nodig?</summary>
+            <p>Dat verschilt per persoon; gemiddeld zo'n 30 tot 40 lessen. Tijdens je gratis proefles maken we een realistische inschatting op basis van jouw ervaring.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Wat kost een rijles?</summary>
+            <p>We werken met eerlijke, persoonlijke prijzen en voordelige pakketten. Vraag een vrijblijvend voorstel aan via WhatsApp of het formulier.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Automaat of schakel: wat kies ik?</summary>
+            <p>Beide kan. Automaat is vaak sneller te leren, schakel geeft je een breder rijbewijs. We adviseren je graag wat het beste bij je past.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Helpen jullie ook met de theorie?</summary>
+            <p>Ja, je krijgt theorie-ondersteuning en oefenmateriaal bij elk pakket, zodat je ook dat onderdeel met vertrouwen haalt.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Kan ik 's avonds of in het weekend rijden?</summary>
+            <p>Zeker. We lessen ook 's avonds en in het weekend, zodat het naast school of werk past.</p>
+          </details>
+          <details class="faq-item reveal">
+            <summary>Wat houdt de gratis proefles in?</summary>
+            <p>Een vrijblijvende kennismakingsles waarin je zelf achter het stuur zit. Daarna weet je of het klikt, zonder verplichtingen.</p>
+          </details>
         </div>
       </div>
+    </section>
 
-      <div class="contact-form-wrap reveal">
-        <form class="contact-form" id="contactForm">
-          <h3>Gratis proefles aanvragen</h3>
-          <div class="form-row">
-            <label>
-              Naam
-              <input type="text" name="naam" id="f-naam" placeholder="Jouw naam" required />
-            </label>
-            <label>
-              Telefoon
-              <input type="tel" name="telefoon" id="f-telefoon" placeholder="06 12345678" />
-            </label>
+    <!-- ============ PROEFLES / CONTACT ============ -->
+    <section class="section" id="proefles">
+      <div class="quote">
+        <div class="quote-intro reveal">
+          <span class="eyebrow">07 · Contact</span>
+          <h2>Claim je <span class="accent">gratis proefles</span>.</h2>
+          <p>Bel, app of vul het formulier in. We reageren snel en plannen je proefles op een moment dat jou uitkomt.</p>
+          <div class="quote-contact">
+            <a class="quote-contact-item" href="tel:+31600000000">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.7A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 10a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c1 .3 1.9.5 2.9.7a2 2 0 0 1 1.6 2z"/></svg>
+              +31 6 00 00 00 00
+            </a>
+            <a class="quote-contact-item" href="https://wa.me/31600000000" target="_blank" rel="noopener">
+              <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.137.561 4.146 1.541 5.888L4 29l8.32-1.514A11.93 11.93 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.6c-1.86 0-3.6-.5-5.097-1.37l-.366-.214-4.94.898.91-4.81-.238-.382A9.55 9.55 0 0 1 6.4 15c0-5.292 4.31-9.6 9.601-9.6 5.29 0 9.599 4.308 9.599 9.6 0 5.291-4.309 9.6-9.599 9.6zm5.27-7.19c-.29-.145-1.71-.844-1.976-.94-.265-.097-.458-.145-.65.145-.193.29-.746.94-.915 1.133-.168.193-.337.218-.626.073-.29-.145-1.223-.451-2.33-1.438-.861-.768-1.443-1.717-1.612-2.007-.169-.29-.018-.446.127-.59.13-.13.29-.338.435-.507.145-.169.193-.29.29-.483.097-.193.048-.362-.024-.507-.073-.145-.65-1.566-.89-2.146-.235-.563-.473-.487-.65-.496l-.554-.01c-.193 0-.507.072-.772.362s-1.013.99-1.013 2.41c0 1.422 1.037 2.795 1.182 2.988.145.193 2.04 3.115 4.943 4.368.69.298 1.23.476 1.65.61.693.22 1.323.189 1.822.115.556-.083 1.71-.699 1.951-1.374.241-.676.241-1.255.169-1.374-.072-.12-.265-.193-.555-.338z"/></svg>
+              WhatsApp
+            </a>
+            <a class="quote-contact-item" href="mailto:info@rijschool-amsterdam.nl">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 6L2 7"/></svg>
+              info@rijschool-amsterdam.nl
+            </a>
+            <span class="quote-contact-item">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              Voorbeeldstraat 1, 1000 AA Amsterdam
+            </span>
           </div>
-          <div class="form-row">
-            <label>
-              Plaats
-              <input type="text" name="plaats" id="f-plaats" placeholder="Bijv. Amsterdam" />
-            </label>
-            <label>
-              Schakel of automaat?
-              <select name="type" id="f-type">
+        </div>
+
+        <form class="quote-form reveal" id="contactForm">
+          <div class="field-row">
+            <div class="field">
+              <label for="f-naam">Naam</label>
+              <input type="text" id="f-naam" name="naam" placeholder="Jouw naam" required />
+            </div>
+            <div class="field">
+              <label for="f-telefoon">Telefoon</label>
+              <input type="tel" id="f-telefoon" name="telefoon" placeholder="06 12345678" />
+            </div>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-plaats">Plaats</label>
+              <input type="text" id="f-plaats" name="plaats" placeholder="Bijv. Amsterdam" />
+            </div>
+            <div class="field">
+              <label for="f-type">Schakel of automaat?</label>
+              <select id="f-type" name="type">
                 <option value="">Maakt niet uit</option>
                 <option value="Schakel">Schakel</option>
                 <option value="Automaat">Automaat</option>
               </select>
-            </label>
+            </div>
           </div>
-          <label>
-            Bericht (optioneel)
-            <textarea name="bericht" id="f-bericht" rows="3" placeholder="Bijv. ik wil graag snel beginnen..."></textarea>
-          </label>
-          <button type="submit" class="btn btn-primary btn-full">Versturen via WhatsApp</button>
-          <p class="form-note">Je opent WhatsApp met een vooraf ingevuld bericht. Liever bellen of mailen? Dat kan ook.</p>
+          <div class="field">
+            <label for="f-bericht">Bericht (optioneel)</label>
+            <textarea id="f-bericht" name="bericht" rows="4" placeholder="Bijv. ik wil graag snel beginnen..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Verstuur via WhatsApp
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="form-note">Je opent WhatsApp met een vooraf ingevuld bericht. Bellen of mailen kan ook.</p>
         </form>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="site-footer">
-    <div class="container footer-inner">
+  <footer class="footer">
+    <div class="footer-top">
       <div class="footer-brand">
-        <span class="logo-text"><span class="logo-mark">🚗</span> Rijschool<small>AMSTERDAM E.O.</small></span>
-        <p>In één keer je rijbewijs.</p>
+        <span class="brand-text">RIJSCHOOL<small>AMSTERDAM E.O.</small></span>
+        <p>In één keer je rijbewijs. Persoonlijke rijlessen in Amsterdam en omstreken, schakel en automaat.</p>
       </div>
-      <nav class="footer-nav">
-        <a href="#over">Over ons</a>
-        <a href="#pakketten">Lespakketten</a>
-        <a href="#geslaagden">Geslaagden</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="footer-contact">
-        <a href="tel:+31600000000">+31 6 00 00 00 00</a>
-        <a href="mailto:info@rijschool-amsterdam.nl">info@rijschool-amsterdam.nl</a>
-        <span>Voorbeeldstraat 1, 1000 AA Amsterdam</span>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Menu</h4>
+          <a href="#pakketten">Pakketten</a>
+          <a href="#aanpak">Aanpak</a>
+          <a href="#geslaagden">Geslaagden</a>
+          <a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="tel:+31600000000">+31 6 00 00 00 00</a>
+          <a href="https://wa.me/31600000000" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="mailto:info@rijschool-amsterdam.nl">info@rijschool-amsterdam.nl</a>
+        </div>
       </div>
     </div>
     <div class="footer-bottom">
-      <span>© <span id="year"></span> Rijschool Amsterdam · Alle rechten voorbehouden.</span>
+      <span>© <span id="year"></span> Rijschool Amsterdam. Alle rechten voorbehouden.</span>
+      <span>Ma–Vr 08:00–20:00 · Za 09:00–16:00</span>
     </div>
   </footer>
 
-  <!-- ============ Sticky mobiele bel/WhatsApp balk ============ -->
+  <!-- ============ Sticky mobiele CTA ============ -->
   <div class="mobile-cta">
-    <a href="tel:+31600000000" class="mc-call">
-      <span class="mc-icon">📞</span> Bel direct
-    </a>
-    <a href="https://wa.me/31600000000" class="mc-wa" target="_blank" rel="noopener">
-      <svg viewBox="0 0 32 32" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M16.001 3C9.373 3 4 8.373 4 15c0 2.137.561 4.146 1.541 5.888L4 29l8.32-1.514A11.93 11.93 0 0 0 16.001 27C22.628 27 28 21.627 28 15S22.628 3 16.001 3zm0 21.6c-1.86 0-3.6-.5-5.097-1.37l-.366-.214-4.94.898.91-4.81-.238-.382A9.55 9.55 0 0 1 6.4 15c0-5.292 4.31-9.6 9.601-9.6 5.29 0 9.599 4.308 9.599 9.6 0 5.291-4.309 9.6-9.599 9.6zm5.27-7.19c-.29-.145-1.71-.844-1.976-.94-.265-.097-.458-.145-.65.145-.193.29-.746.94-.915 1.133-.168.193-.337.218-.626.073-.29-.145-1.223-.451-2.33-1.438-.861-.768-1.443-1.717-1.612-2.007-.169-.29-.018-.446.127-.59.13-.13.29-.338.435-.507.145-.169.193-.29.29-.483.097-.193.048-.362-.024-.507-.073-.145-.65-1.566-.89-2.146-.235-.563-.473-.487-.65-.496l-.554-.01c-.193 0-.507.072-.772.362s-1.013.99-1.013 2.41c0 1.422 1.037 2.795 1.182 2.988.145.193 2.04 3.115 4.943 4.368.69.298 1.23.476 1.65.61.693.22 1.323.189 1.822.115.556-.083 1.71-.699 1.951-1.374.241-.676.241-1.255.169-1.374-.072-.12-.265-.193-.555-.338z"/></svg>
-      WhatsApp
-    </a>
+    <a href="tel:+31600000000" class="mc-call">Bel direct</a>
+    <a href="https://wa.me/31600000000" class="mc-wa" target="_blank" rel="noopener">WhatsApp</a>
   </div>
 
   <script src="script.js"></script>
