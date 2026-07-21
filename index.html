@@ -17,7 +17,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 
   <script type="application/ld+json">
@@ -92,6 +92,10 @@
 
     <!-- ================= HERO ================= -->
     <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <!-- >>> HERO FOTO — vervang deze URL door je eigen foto <<< -->
+        <img src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=1800&q=80" alt="" />
+      </div>
       <div class="wrap hero-grid">
         <div class="hero-copy">
           <span class="pill fade"><span class="pill-dot"></span>Rijschool in Amsterdam en omstreken</span>
@@ -185,8 +189,10 @@
           </form>
         </div>
       </div>
+    </section>
 
-      <!-- Feiten-balk -->
+    <!-- Feiten-wolk: overlapt de hero-foto -->
+    <div class="facts-float">
       <div class="wrap">
         <ul class="facts fade">
           <li>
@@ -207,7 +213,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </div>
 
     <!-- ================= MARQUEE ================= -->
     <div class="marquee" aria-hidden="true">
