@@ -176,13 +176,13 @@ em { font-style: normal; color: var(--blue); }
 .seg input:checked + span { border-color: var(--blue); background: rgba(232,163,61,.08); color: var(--blue); }
 .wstep-btns { display: flex; gap: 10px; margin-top: 4px; }
 
-/* ---- Feiten-wolk: overlapt de hero-foto in plaats van blok-op-blok ---- */
-.facts-float { position: relative; z-index: 5; margin-top: -56px; margin-bottom: -10px; }
+/* ---- Feiten-kaart: overlapt de hero-foto in plaats van blok-op-blok ---- */
+.facts-float { position: relative; z-index: 5; margin-top: -46px; padding-bottom: clamp(28px, 5vw, 48px); }
 .facts {
-  list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px;
+  list-style: none; display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px 18px;
   background: var(--light); border: 1px solid var(--line);
-  border-radius: 48px 26px 48px 26px;
-  box-shadow: 0 30px 60px -22px rgba(11,43,51,.4), 0 0 0 1px rgba(232,163,61,.08);
+  border-radius: 26px;
+  box-shadow: 0 22px 44px -20px rgba(11,43,51,.32);
   padding: 26px 30px;
 }
 .facts li { display: flex; flex-direction: column; gap: 3px; padding-left: 34px; position: relative; }
