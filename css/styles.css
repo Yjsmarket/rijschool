@@ -233,7 +233,7 @@ em { font-style: normal; color: var(--blue); }
 
 /* ---------------------------------------------------- STEPS */
 .steps-shell { position: relative; }
-.steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+.steps .step { flex-basis: min(250px, 78vw); }
 .step {
   position: relative; background: #fff; border: 1px solid var(--line); border-radius: var(--r);
   padding: 26px 22px; overflow: hidden; transition: transform .35s var(--ease), box-shadow .35s var(--ease);
@@ -417,7 +417,6 @@ em { font-style: normal; color: var(--blue); }
   .foot-grid { grid-template-columns: 1fr 1fr; }
   .track-nav { display: flex; }
   .swipe-hint { display: none; }
-  .steps { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 720px) {
@@ -430,7 +429,6 @@ em { font-style: normal; color: var(--blue); }
 }
 
 @media (max-width: 480px) {
-  .steps { grid-template-columns: 1fr; }
   .seg { grid-template-columns: 1fr 1fr 1fr; }
   .m-menu-cta { grid-template-columns: 1fr; }
   .cta-btns .btn, .hero-btns .btn { flex: 1; }
